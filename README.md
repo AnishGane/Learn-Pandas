@@ -10,9 +10,9 @@
 3. Generate a `requirements.txt` file with: **pip freeze > requirements.txt**
    - `requirements.txt` is created to save a list of all the python packages with their exact versions that you have installed in your environment.
    - **How does it work?**:
-     a. **Install the packages**: for e.g.: pip install numpy pandas flask
-     b. **Save them**: pip freeze > requirements.txt
-     c. **Share your project**:
+     - **Install the packages**: for e.g.: pip install numpy pandas flask
+     - **Save them**: pip freeze > requirements.txt
+     - **Share your project**:
 
      ```
       MyProject/
@@ -22,4 +22,4 @@
          └── README.md
      ```
 
-     d. **Someone clones your project**: Instead of installing each package manually, they simply run: `pip install -r requirements.txt`
+     - **Someone clones your project**: Instead of installing each package manually, they simply run: `pip install -r requirements.txt`

@@ -33,6 +33,21 @@ print("Type of the Series:", s.dtype)
 print("Description of the Series:", s.describe())
 print("Info of the Series:", s.info())
 
+# Creating a Series using dictionary
+calories = {
+    "day1": 420,
+    "day2": 380,
+    "day3": 390,
+    "day4": 400,
+    "day5": 410,
+    "day6": 420,
+    "day7": 430,
+}
+s = pd.Series(calories)
+print(s)
+print("Index of the Series:", s.index)
+print("Values of the Series:", s.values)
+
 # Create a DataFrame using a dictionary
 data = {
     'name': ['Alice', 'Bob', 'Charlie'],
@@ -53,3 +68,12 @@ print("Shape of the DataFrame:", df.shape)
 print("Size of the DataFrame:", df.size)
 print("Description of the DataFrame:", df.describe())
 print("Info of the DataFrame:", df.info())
+
+# Locate Row in DataFrame
+# print(df.loc[0])
+# print(df.loc[[0, 1]])
+# print(df.loc[0:1])
+# print(df.loc[[True, False, True]])
+# print(df.loc[df['age'] > 30])
+# print(df.loc[df['age'] > 30, ['name', 'city']])
+# print(df.loc[df['age'] > 30, ['name', 'city']])
