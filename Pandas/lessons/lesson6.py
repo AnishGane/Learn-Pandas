@@ -51,3 +51,17 @@ df.ffill()
 
 # 10. Backward Fill
 df.bfill()
+
+# 11. Replace Specific Values
+df.replace(np.nan, 0, inplace=True)
+
+df.replace({
+    "Age": np.nan,
+    "Marks": np.nan
+})
+
+# 12. Remove Duplicate Rows
+df.drop_duplicates(inplace=True)
+
+# 13. Find Duplicate Rows
+df.duplicated()
